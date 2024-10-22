@@ -1,0 +1,27 @@
+<div class="row wealth-calendar" [ngClass]="{'gradient': wealthCalendar.length === 1}"
+    style="background-image: url(assets/svg/dot-graphic.svg)">
+    <div class="col-sm-12 top">
+        <p class="heading">Wealth Calendar </p>
+    </div>
+    @for(wealth of wealthCalendar; track wealth){
+    <div class="col-sm-12 d-flex align-items-center mb-3">
+        <div class="date p-10" [ngClass]="{'active': wealth.day === 7}">
+            <p class="mb-0 pt-1 day">{{wealth.day}}</p>
+            <p class="mb-0 month">{{wealth.month}}</p>
+        </div>
+        <div class="description p-10 ms-3 ">
+            <span class="small-size">Wealth Calendar</span>
+            <p class="pt-2">{{wealth.desc}}</p>
+        </div>
+    </div>
+    }
+    <div class="col-sm-12 d-flex justify-content-center align-items-center paginator" *ngIf="wealthCalendar.length>5">
+        <div class="prev content me-3">
+            <img src="assets\images\Vector.png" alt="">
+        </div>
+        <div class="next content ms-3">
+            <img src="assets\images\Vector (1).png" alt="">
+        </div>
+
+    </div>
+</div>

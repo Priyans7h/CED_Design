@@ -1,0 +1,159 @@
+.wealth-calendar {
+    padding: .5rem 1.875rem;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right top;
+    margin-right: 10px;
+
+    .top {
+        margin-bottom: 27px;
+    }
+
+    .heading {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.0125rem;
+    }
+
+    .date {
+        width: 4.04125rem;
+        height: 4.458125rem;
+        border-radius: 0.9375rem;
+        border: 1px solid #EEEEEE;
+        text-align: center;
+        padding: 10px;
+        background-color: #fff !important;
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            line-height: 1.2rem;
+            text-align: center;
+            color: #D3D3D3;
+        }
+
+        .day {
+            font-size: 1.25rem;
+        }
+
+        .month {
+            font-size: 1rem;
+        }
+
+    }
+
+    .description {
+        p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 0.9rem;
+        }
+    }
+
+    .active {
+        box-shadow: 1px 1px 6px 3px #0000000A;
+        border: 1px solid #FFFFFF;
+        background: linear-gradient(163.33deg, #FFA953 -4.02%, #FFBC34 195.46%);
+
+        p {
+            color: #FFFFFF !important;
+        }
+
+    }
+
+    .content {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0px 0px 12px 2px #00000012;
+    }
+
+    .prev {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .next {
+        width: 4.0625rem;
+        height: 4.0625rem;
+    }
+
+    .prev .next img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .paginator {
+        margin-top: 2.1875rem;
+    }
+
+    .gradient {
+        background: linear-gradient(126.82deg, #fff5eb 15.82%, #FFFFFF 34.32%, #fff4de 51.28%, #fff4de 70.77%, #FFFFFF 89.44%);
+        background-image: none !important;
+    }
+
+    .small-size {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .gradient {
+        position: absolute;
+        padding: 1rem;
+        top: 27.8125rem;
+        height: 120px;
+        bottom: 134px;
+        left: -0.0025rem;
+        border-radius: 0.625rem;
+        background-color: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 1);
+        box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.04);
+        margin: 1rem;
+        width: -webkit-fill-available;
+
+        .top {
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        .mb-3 {
+            margin-bottom: 0 !important;
+        }
+
+        padding: 0rem !important
+    }
+
+    .gradient .small-size {
+        color: rgba(176, 176, 176, 1);
+        display: inline !important;
+        font-weight: 700;
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+        letter-spacing: 0.2px;
+    }
+
+    .wealth-calendar {
+        background-image: none !important;
+
+        .top {
+            margin-bottom: 10px !important;
+        }
+
+        margin-bottom: 2rem;
+        padding: 1.875rem 1rem 1.875rem;
+    }
+
+    .paginator {
+        margin-top: .1875rem !important;
+    }
+
+
+
+}

@@ -1,0 +1,88 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 0.625rem !important;
+    opacity: 0.5;
+
+    img {
+        height: 16.1975rem;
+        background: linear-gradient(97.13deg, rgba(0, 0, 0, 0.4) -67.08%, rgba(0, 0, 0, 0) 107.7%);
+    }
+
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    h4 {
+        font-size: 1rem;
+        line-height: 1.875rem;
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+    }
+
+    h6 {
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.25rem
+    }
+
+    transform: translate(-50%, -50%);
+}
+
+.start {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start {
+    position: absolute;
+    margin-bottom: 30px;
+}
+
+.pagination-area {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}

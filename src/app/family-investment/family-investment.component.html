@@ -1,0 +1,86 @@
+<div class="row family-investment">
+    <div class="col-12 col-sm-12 col-md-6">
+        @for(detail of details; track detail){
+        <div class="area d-flex justify-content-between align-items-center ">
+            <h6 class="mb-0 ms-2">{{detail.info}}</h6>
+            <img [src]="detail.icon" alt="">
+        </div>
+        }
+        @for(user of userDetails; track user){
+        <div class="detail d-flex justify-content-between align-items-start">
+            <div class="user-details d-flex align-items-start ">
+                <img [src]="user.icon" alt="">
+                <div class="ms-3">
+                    <h4 class="font">{{ user.name }}</h4>
+                    <h5 class="data mb-0">{{ user.info }}</h5>
+                </div>
+            </div>
+            <div class="d-flex align-items-start ">
+                <h6 class="font mb-0">{{ user.amount }}</h6>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="col-12 col-sm-12 col-md-6">
+        <div class="heading d-flex align-items-center">
+            <img src="assets/images/Group 349.png" alt="">
+            <h6 class="ms-3 mb-0">Add Family Member</h6>
+        </div>
+        <div class="content p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Text</h4>
+                <img src="assets/images/info.png" alt="">
+            </div>
+            <div class="row">
+                @for(bar of progressBar; track bar){
+                <div class="col-6 col-sm-6 mb-2">
+                    <div class="progress-bar mb-1">
+                        <div class="bar" style="width:20%"></div>
+                    </div>
+                    <h5 class="mb-1">{{bar.percentage}}</h5>
+                    <h6>{{bar.text}}</h6>
+                </div>
+                }
+            </div>
+        </div>
+        <div class="highlights mt-3">
+            <h5>Highlight abnormal concentration in one of the asset class. Show idael mix.</h5>
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 mt-4">
+        <div class="d-flex justify-content-end">
+            <div class="rich ">
+                <h5 class="text-end">We Want to make you rich</h5>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-2">
+            <button class="learn">Learn More</button>
+        </div>
+        <div class="svg">
+            <img src="assets/svg/girl.svg" alt="">
+        </div>
+
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 more-details mt-4">
+        @for(detail of moreDetails; track detail){
+        <div class="area  d-flex justify-content-between align-items-center ">
+            <h6 class="mb-0 ms-2">{{detail.info}}</h6>
+            <img [src]="detail.icon" alt="">
+        </div>
+        }
+        @for(user of moreUserDetails; track user){
+        <div class="detail d-flex justify-content-between align-items-start">
+            <div class="user-details d-flex align-items-start ">
+                <img [src]="user.icon" alt="">
+                <div class="ms-3">
+                    <h4 class="font">{{ user.name }}</h4>
+                    <h5 class="data mb-0">{{ user.info }}</h5>
+                </div>
+            </div>
+            <div class="d-flex align-items-start ">
+                <h6 class="font mb-0">{{ user.amount }}</h6>
+            </div>
+        </div>
+        }
+    </div>
+</div>

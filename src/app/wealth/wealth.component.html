@@ -1,0 +1,35 @@
+<div class="row wealth">
+
+    <div class="col-sm-12 mb-bottom">
+        <div class="row grad mb-3">
+            <div class="col-sm-12 d-flex justify-content-end align-items-center gradient mb-4">
+                <div>
+                    <img src="assets\images\Notifications_Unread_Medium.png" alt="" class="me-4">
+                    <img src="assets\images\support_agent-24px 1.png" alt="" class="me-4">
+                </div>
+                <div class="search-container">
+                    <img src="assets/images/Search.png" alt="" class="search-icon">
+                    <input type="text" class="search" placeholder="Search" title="Type in a name">
+                </div>
+            </div>
+            <div class="col-sm-12 mob-view  justify-content-center p-4 pb-0">
+                <img src="assets/svg/profile.svg" alt="" class="">
+                <p class="mt-2">Hello <span>Joy</span></p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 ps-0 pe-0 mb-4">
+                <app-gradient></app-gradient>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 ps-0 pe-0 mb-5 d-flex justify-content-center align-items-center">
+                <app-wealth-calendar [wealthCalendars]="wealthCalendars"></app-wealth-calendar>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-12">
+        <app-investment-info></app-investment-info>
+    </div>
+    <div class="col-sm-12">
+        <app-family-investment></app-family-investment>
+    </div>
+</div>

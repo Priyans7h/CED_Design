@@ -1,0 +1,51 @@
+<div class="row investment-info">
+    <div class="col-12 col-sm-12 col-md-2 top-container">
+        <div class="row">
+            @for(investment of investments; track investment){
+            <div class="col-4 col-sm-4 col-md-12">
+                <div class="box d-flex flex-column align-items-center justify-content-center mb-10"
+                    [ngClass]="{'active': investment.name === 'Investments'}">
+                    <h6 class="name mb-0">{{investment.name}}</h6>
+                    <h5 class="data mb-0">{{investment.data}}</h5>
+                </div>
+
+            </div>
+            }
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-6 pe-3">
+        @for(details of investmentsDetails; track details){
+        <div class="detail d-flex justify-content-between align-items-center">
+            <div class="area d-flex align-items-center ">
+                <img [src]="details.icon" alt="">
+                <h6 class="mb-0 ms-2">{{ details.name }}</h6>
+            </div>
+            <div class="area d-flex align-items-center ">
+                <div class="me-2">
+                    <h6 class="font mb-0">{{ details.data }}</h6>
+                    <h5 class="data mb-0">{{ details.inc }}</h5>
+                </div>
+                <div>
+                    <img src="assets\images\Vector (1).png" alt="">
+                </div>
+            </div>
+        </div>
+
+        }
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 ps-5 mt-3">
+        <div class="flag">
+            <div class="content">
+                <img src="assets\images\flag.png" alt="" class="mb-3">
+                <h5>All Weather Investing</h5>
+                <h6>Build a foundation with a portfolio of equity, gold & fixed income ETFs</h6>
+                <h6>CAGR</h6>
+                <h5 class="data">11.45%</h5>
+                <h4 class="mb-4">Invest Now</h4>
+            </div>
+            <img class="png" src="assets\images\Group 1043.png" alt="">
+        </div>
+    </div>
+
+</div>

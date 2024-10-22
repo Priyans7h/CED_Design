@@ -1,0 +1,96 @@
+.home-content {
+    padding: 1.875rem 0rem 1rem 1rem;
+
+    .search {
+        box-shadow: 1px 1px 6px 3px #0000000A;
+        width: 12rem;
+        border-radius: 1.25rem;
+        padding-left: 2.3rem;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .search-container {
+        position: relative;
+        width: 12rem;
+        height: 2.375rem;
+        border-radius: 1.25rem;
+        box-shadow: 1px 1px 6px 3px #0000000A;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 0.5rem;
+        width: 1.2rem;
+        height: auto;
+    }
+
+    .gradient {
+        margin-bottom: 2.5rem;
+    }
+
+    .search::placeholder {
+        font-size: 0.75rem;
+    }
+
+    .mob-view {
+        display: none;
+    }
+
+    .mb-2 {
+        margin-bottom: .5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-icon {
+        width: 1rem;
+        left: 0.25rem;
+    }
+
+    .home-content {
+        padding: 0;
+
+        .mb-2 {
+            margin-bottom: 0rem !important;
+        }
+
+        .search {
+            width: 8rem;
+        }
+
+        .search-container {
+            width: 8rem;
+        }
+    }
+
+    .gradient {
+        margin-bottom: 0 !important;
+        padding-bottom: 1.5rem;
+        padding-top: 1.875rem;
+        // background: linear-gradient(126.82deg, #FFFFFF 15.82%, #fff5eb 34.32%, #fff5eb 51.28%, #FFFFFF 70.77%, #fff4de 89.44%);
+    }
+
+    .grad {
+        background: linear-gradient(126.82deg, #fff5eb 15.32%, #FFFFFF 34.82%, #fff5eb 51.28%, #FFFFFF 70.77%, #fff4de 89.44%) !important;
+    }
+
+    .mob-view {
+        display: grid !important;
+
+        p {
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.05rem;
+        }
+
+        span {
+            font-weight: 900;
+        }
+    }
+}
